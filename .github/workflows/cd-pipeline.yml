@@ -48,7 +48,7 @@ jobs:
                 docker login -u $D_USER -p $D_PASS
             - name: Push Image
               run: |
-                docker push ${{env.image}}
+                docker push ${{env.IMAGE}}
             - name: Enable Billing
               run: |
                 gcloud servives enable cloudbilling.googleapis.com --project=${{secrets.GCP_PROJECT_ID}}
