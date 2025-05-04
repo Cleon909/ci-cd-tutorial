@@ -25,7 +25,7 @@ jobs:
               run: npm test
     build:
         needs: test
-        runs-on: unbuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: checkout
               uses: actions/checkout@v3
